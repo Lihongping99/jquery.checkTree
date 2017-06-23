@@ -1,8 +1,8 @@
 # jquery.checkTree
 Jquery CheckTree
 
-  <div id="tree-container"></div>
-  
+        <div id="tree-container"></div>
+ 
     <script>
             var mockData = [];
             mockData.push({
