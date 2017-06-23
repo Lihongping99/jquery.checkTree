@@ -7,7 +7,7 @@
 /**input data format: 
 
 [{
-    item:{id:'id', label:'label', checked:false}, 
+    item:{id:'id', label:'label',value:1, checked:false}, 
     chidren:[{
         item:{id:'id', label:'label', checked:false}, 
         chidren:[...]
@@ -18,7 +18,7 @@
 
 (function ($) {
 
-    jQuery.fn.highCheckTree = function (settings) {
+    jQuery.fn.checkTree = function (settings) {
 
         settings = $.extend({
             data: [],               // input data which will be used to initilze the tree
@@ -52,7 +52,7 @@
                     checkClass = checkedChildren.length === 0 ? '' : checkedChildren.length === clen ? 'checked' : 'half_checked';
                 }
 
-                result += '<li rel="' + node.item.id + '"><div class="arrow ' + arrowClass + '"></div><div class="checkbox ' + checkClass + '"></div><label>' +
+                result += '<li rel="' + node.item.id + '"><div class="arrow ' + arrowClass + '"></div><div class="checkbox ' + checkClass + '"><input type="hidden" value="'+node.item.value+'"/></div><label>' +
                              node.item.label + '</label></li>';
             }
 
