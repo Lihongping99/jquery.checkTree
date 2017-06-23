@@ -33,12 +33,12 @@
         }
 
         .checktree li .collapsed {
-            background: url(checktree_icon.png) no-repeat;
+            background: url(../img/checktree_icon.png) no-repeat;
             background-position: 0px -22px;
         }
 
         .checktree li .expanded {
-            background: url(checktree_icon.png) no-repeat;
+            background: url(../img/checktree_icon.png) no-repeat;
             background-position: -14px -22px;
         }
 
@@ -47,7 +47,7 @@
             height: 18px;
             cursor: pointer;
             float: left;
-            background: url(checktree_icon.png) no-repeat;
+            background: url(../img/checktree_icon.png) no-repeat;
             background-position: 1px 0;
             margin-right: 7px;
         }
