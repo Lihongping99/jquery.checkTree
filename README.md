@@ -1,5 +1,4 @@
-# jquery.checkTree
-Jquery CheckTree
+# jquery.checkTree 
 
         <div id="tree-container"></div>
  
